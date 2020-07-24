@@ -11,14 +11,14 @@ public class Game {
 
     public Game() {
         Deck cards = new Deck();
-        auxDeck = new Stack();
+        auxDeck = new Stack<>();
         gameField = new Card[20][7];
         finalDecks = new Card[13][4];
         gameDeck = cards.getDeck();
         Collections.shuffle(gameDeck);
         startGame();
     }
-
+/*
     private void startGame2() {
         this.finalDecks[0][0]=new Card(Card.Seed.PICCH, Card.Value.A,1, Card.Color.NERO);
         this.finalDecks[0][0].setHidden(false);
@@ -48,6 +48,8 @@ public class Game {
         this.finalDecks[12][0].setHidden(false);
 
     }
+
+ */
     //Metodo che inizializza la griglia a inizio gioco
     private void startGame() {
         for (int i = 0; i <= 6; i++) {
